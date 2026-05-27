@@ -252,8 +252,10 @@ export default function Home() {
                 Applied machine learning and full-stack solutions for data-driven problems.
               </p>
             </div>
-            <Button variant="link" className="text-primary group">
-              View All Projects <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <Button variant="link" className="text-primary group" asChild>
+              <a href="https://github.com/simrann0104" target="_blank" rel="noopener noreferrer">
+                View All Projects <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
 
