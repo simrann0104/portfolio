@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Download, ExternalLink, GraduationCap, Code2, Cpu, Brain, Database, Wrench, MapPin, Phone, Award } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { RecruiterPitchTool } from "@/components/recruiter-pitch-tool";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -31,9 +30,9 @@ export default function Home() {
       role: "Machine Learning Intern",
       period: "Feb 2026 - Mar 2026",
       description: [
-        "Worked on structured ML tasks involving data preprocessing, model training, and performance evaluation.",
-        "Utilized Python libraries to build and test predictive models.",
-        "Strengthened understanding of end-to-end ML workflows applied to real-world datasets."
+        "Worked on structured machine learning tasks involving data preprocessing, model training, and performance evaluation.",
+        "Utilized Python libraries including NumPy, Pandas, and Scikit-learn to build and test basic predictive models.",
+        "Strengthened understanding of end-to-end ML workflows and applied concepts to real-world datasets."
       ],
       tech: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
     },
@@ -43,8 +42,8 @@ export default function Home() {
       period: "Dec 2024",
       description: [
         "Optimized datasets of 50k+ records, improving model training efficiency by 15%.",
-        "Developed and deployed robust Machine Learning models using Python libraries.",
-        "Translated complex data analysis into actionable business insights for strategic decision-making."
+        "Leveraged Python libraries including NumPy, Pandas, and Scikit-learn to develop and deploy robust Machine Learning models.",
+        "Translated complex data analysis into actionable business insights to drive strategic decision-making processes."
       ],
       tech: ["Scikit-learn", "Seaborn", "Matplotlib", "Tableau"]
     }
@@ -147,17 +146,13 @@ export default function Home() {
                 <Download className="mr-2 h-4 w-4" /> Resume
               </Button>
               <div className="flex items-center gap-4 ml-2">
-                <a href="https://linkedin.com/in/simrankaur2004" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://linkedin.com/in/simrankaur2004" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="https://github.com/simrann0104" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://github.com/simrann0104" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                   <Github className="h-6 w-6" />
                 </a>
               </div>
-            </div>
-            
-            <div className="max-w-md pt-4">
-              <RecruiterPitchTool />
             </div>
           </div>
 
@@ -167,7 +162,7 @@ export default function Home() {
               <div className="absolute inset-0 border-2 border-primary/20 rounded-full animate-[spin_10s_linear_infinite]" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/10 shadow-2xl animate-float">
                 <Image
-                  src={pfp?.imageUrl || "https://placehold.co/400x400"}
+                  src={pfp?.imageUrl || "https://picsum.photos/seed/simran/400/400"}
                   alt="Simran Kaur"
                   fill
                   className="object-cover"
