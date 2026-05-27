@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -32,7 +31,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="font-headline text-2xl font-bold text-primary glow-text">
-          NovaKaur
+          Simran
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
