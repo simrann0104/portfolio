@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -7,28 +8,28 @@
       "imageHint": "professional woman"
     },
     {
-      "id": "project-addiction",
-      "description": "Behavioral analytics dashboard for addiction risk prediction",
-      "imageUrl": "https://picsum.photos/seed/addiction/800/600",
-      "imageHint": "analytics dashboard"
+      "id": "project-pehchaan",
+      "description": "Voter ID verification system dashboard",
+      "imageUrl": "https://picsum.photos/seed/identity/800/600",
+      "imageHint": "biometric id"
     },
     {
       "id": "project-kizashi",
       "description": "AI-based behavioral analytics platform interface",
-      "imageUrl": "https://picsum.photos/seed/kizashi/800/600",
-      "imageHint": "data interface"
+      "imageUrl": "https://picsum.photos/seed/routine/800/600",
+      "imageHint": "habit formation"
+    },
+    {
+      "id": "project-addiction",
+      "description": "Behavioral analytics dashboard for addiction risk prediction",
+      "imageUrl": "https://picsum.photos/seed/capsules/800/600",
+      "imageHint": "medical risk"
     },
     {
       "id": "project-segmentation",
       "description": "Customer segments visualization and clustering",
-      "imageUrl": "https://picsum.photos/seed/customer/800/600",
-      "imageHint": "segmentation chart"
-    },
-    {
-      "id": "project-pehchaan",
-      "description": "Voter ID verification system dashboard",
-      "imageUrl": "https://picsum.photos/seed/pehchaan/800/600",
-      "imageHint": "verification app"
+      "imageUrl": "https://picsum.photos/seed/clustering/800/600",
+      "imageHint": "market segments"
     }
   ]
 }

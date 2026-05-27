@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
@@ -20,7 +21,8 @@ export default function Home() {
     fullstack: ["React.js", "Node.js", "Express.js", "Next.js", "FastAPI"],
     databases: ["MongoDB", "MySQL", "MS-SQL"],
     tools: ["Jupyter Notebook", "Tableau", "Excel", "Git", "Postman", "VS Code", "Google Colab"],
-    core: ["Data Structures & Algorithms", "DBMS", "Machine Learning", "Data Analytics", "Operating Systems"]
+    core: ["Data Structures & Algorithms", "DBMS", "Machine Learning", "Data Analytics", "Operating Systems"],
+    soft: ["Analytical Thinking", "Problem Solving", "Team Collaboration", "Adaptability", "Leadership"]
   };
 
   const experience = [
@@ -54,28 +56,32 @@ export default function Home() {
       subtitle: "Voter ID Verification System",
       description: "Engineered backend architecture for a MERN-based Voter Verification System, integrating a Machine Learning model for identity validation using attributes such as Aadhaar and address.",
       tech: ["MongoDB", "Express", "React", "Node", "Axios", "Machine Learning"],
-      image: pehchaanImg?.imageUrl
+      image: pehchaanImg?.imageUrl,
+      hint: pehchaanImg?.imageHint
     },
     {
       title: "KIZASHI",
       subtitle: "AI-Based Behavioural Analytics System",
       description: "Developed a MERN-based behavioural analytics platform integrated with Machine Learning models to detect behavioural drift and predict productivity risks using BDI modelling.",
       tech: ["MongoDB", "Express", "Python", "FastAPI", "React", "Node", "Scikit-learn"],
-      image: kizashiImg?.imageUrl
+      image: kizashiImg?.imageUrl,
+      hint: kizashiImg?.imageHint
     },
     {
       title: "Addiction Risk Prediction",
       subtitle: "Behavioral Analytics & Classification",
       description: "Developed multiclass classification models using Random Forest and XGBoost to predict behavioral addiction patterns. Applied SHAP to interpret model predictions and identify key contributing features.",
       tech: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "SHAP"],
-      image: addictionImg?.imageUrl
+      image: addictionImg?.imageUrl,
+      hint: addictionImg?.imageHint
     },
     {
       title: "Customer Segmentation Classification",
       subtitle: "K-Means Clustering Analysis",
       description: "Engineered a data-driven customer segmentation model using K-Means to uncover distinct behavioral cohorts and translate patterns into actionable business insights.",
       tech: ["R", "Clustering", "Tableau"],
-      image: segmentationImg?.imageUrl
+      image: segmentationImg?.imageUrl,
+      hint: segmentationImg?.imageHint
     }
   ];
 
@@ -131,8 +137,8 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20">
-                View My Work
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20" asChild>
+                <a href="#projects">View My Work</a>
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5">
                 <Download className="mr-2 h-4 w-4" /> Resume
@@ -253,7 +259,7 @@ export default function Home() {
                     alt={project.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    data-ai-hint="data visualization"
+                    data-ai-hint={project.hint || "data visualization"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
@@ -321,11 +327,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Certifications</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="2026" />
-            <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="2025" />
-            <CertCard title="RDBMS Introduction" issuer="IBM" date="2025" />
-            <CertCard title="R Programming" issuer="Coursera" date="2024" />
-            <CertCard title="Crash Course on Python" issuer="Google" date="2024" />
+            <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="Feb 2026" />
+            <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="Jun 2025" />
+            <CertCard title="RDBMS Introduction" issuer="IBM" date="Aug 2025" />
+            <CertCard title="R Programming" issuer="Coursera" date="Jul 2024" />
+            <CertCard title="Crash Course on Python" issuer="Google" date="Apr 2024" />
           </div>
         </div>
       </section>
