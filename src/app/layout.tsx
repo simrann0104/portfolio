@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'NovaKaur | Simran Kaur Portfolio',
+  title: 'Simran Kaur',
   description: 'Data Science & Full Stack Developer building AI-powered systems.',
 };
 

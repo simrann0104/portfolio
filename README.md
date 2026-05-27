@@ -1,4 +1,5 @@
-# NovaKaur | Simran Kaur Portfolio
+
+# Simran Kaur Portfolio
 
 This is a professional portfolio built with Next.js, Tailwind CSS, ShadCN UI, and Genkit for AI-powered features.
 
