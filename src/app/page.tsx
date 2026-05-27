@@ -144,8 +144,10 @@ export default function Home() {
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20" asChild>
                 <a href="#projects">View My Work</a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5">
-                <Download className="mr-2 h-4 w-4" /> Resume
+              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5" asChild>
+                <a href="/Simran-Kaur- Backend Dev.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" /> Resume
+                </a>
               </Button>
               <div className="flex items-center gap-4 ml-2">
                 <a href="https://linkedin.com/in/simrankaur2004" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
@@ -164,7 +166,7 @@ export default function Home() {
               <div className="absolute inset-0 border-2 border-primary/20 rounded-full animate-[spin_10s_linear_infinite]" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/10 shadow-2xl animate-float">
                 <Image
-                  src={pfp?.imageUrl || "https://picsum.photos/seed/simran/400/400"}
+                  src={pfp?.imageUrl || "/hehehehe.jpg"}
                   alt="Simran Kaur"
                   fill
                   className="object-cover"
