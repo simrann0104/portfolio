@@ -18,6 +18,24 @@
       "description": "Voter ID verification system interface",
       "imageUrl": "https://picsum.photos/seed/pehchaan/800/600",
       "imageHint": "verification system"
+    },
+    {
+      "id": "project-addiction",
+      "description": "Visual representation of behavioral risk prediction",
+      "imageUrl": "https://picsum.photos/seed/addiction/800/600",
+      "imageHint": "analytics chart"
+    },
+    {
+      "id": "project-segmentation",
+      "description": "Customer segments visualization",
+      "imageUrl": "https://picsum.photos/seed/customer/800/600",
+      "imageHint": "segmentation visualization"
+    },
+    {
+      "id": "project-climate",
+      "description": "Environmental climate modeling dashboard",
+      "imageUrl": "https://picsum.photos/seed/climate/800/600",
+      "imageHint": "climate dashboard"
     }
   ]
 }

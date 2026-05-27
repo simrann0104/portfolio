@@ -22,22 +22,22 @@ export function RecruiterPitchTool() {
       const result = await generateRecruiterPitch({
         targetCompany: company,
         simranName: "Simran Kaur",
-        specialization: "Data Science & Full Stack Developer building AI-powered systems and scalable architectures.",
-        keySkills: ["Java", "Python", "JavaScript", "Node.js", "React.js", "FastAPI", "TensorFlow", "Scikit-learn"],
+        specialization: "Data Science & Full Stack Developer with expertise in ML, behavioral analytics, and scalable AI systems.",
+        keySkills: ["Python", "Java", "R", "SQL", "Scikit-learn", "FastAPI", "Tableau", "Next.js"],
         projects: [
           {
-            title: "Pehchaan",
-            description: "Voter ID Verification System using MERN and ML for identity validation.",
-            techStack: ["MongoDB", "Express", "React", "Node", "ML"]
+            title: "Addiction Risk Prediction",
+            description: "Built classification models (XGBoost/Random Forest) to predict behavioral risk patterns.",
+            techStack: ["Python", "XGBoost", "Scikit-learn"]
           },
           {
             title: "KIZASHI",
-            description: "AI Behavior Analytics System to predict productivity risks.",
-            techStack: ["MERN", "Python", "FastAPI", "Scikit-learn"]
+            description: "AI-based behavioral analytics system for productivity risk prediction.",
+            techStack: ["MERN", "FastAPI", "Python"]
           }
         ],
-        achievements: ["Dean's List (Top 10%)", "EY Techathon 6.0 Participant"],
-        educationSummary: "MCA Student at Lovely Professional University"
+        achievements: ["Top 10% academic performer at LPU", "EY Techathon 6.0 Participant"],
+        educationSummary: "MCA Candidate at LPU with 8.20 CGPA"
       });
       setPitch(result.pitch);
     } catch (error) {
