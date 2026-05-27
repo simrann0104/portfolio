@@ -145,7 +145,11 @@ export default function Home() {
                 <a href="#projects">View My Work</a>
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5" asChild>
-                <a href="/Simran-Kaur-%20Backend%20Dev.pdf" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/Simran-Kaur-%20Backend%20Dev.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Download className="mr-2 h-4 w-4" /> Resume
                 </a>
               </Button>

@@ -22,7 +22,7 @@
     {
       "id": "project-addiction",
       "description": "Behavioral analytics dashboard for addiction risk prediction",
-      "imageUrl": "https://picsum.photos/seed/capsules/800/600",
+      "imageUrl": "/addiction.jpg",
       "imageHint": "medical risk"
     },
     {
