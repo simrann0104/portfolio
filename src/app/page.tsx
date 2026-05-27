@@ -131,11 +131,11 @@ export default function Home() {
                 Data Science & Full Stack Developer
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Bridging <span className="text-primary glow-text">Data</span> & <br />
-                <span className="text-secondary glow-text">Intelligence.</span>
+                I'm <br />
+                <span className="text-primary glow-text">Simran Kaur</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                I’m Simran Kaur, building AI-powered systems, predictive models, and intelligent digital experiences.
+                Building AI-powered systems, predictive models, and intelligent digital experiences.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
