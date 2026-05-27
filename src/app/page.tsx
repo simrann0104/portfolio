@@ -107,14 +107,17 @@ export default function Home() {
       period: "2021 - 2022",
       location: "Kolkata, West Bengal",
       score: "Percentage: 73.6%"
-    },
-    {
-      degree: "Matriculation",
-      school: "Khalsa Model Senior Secondary School",
-      period: "2019 - 2020",
-      location: "Kolkata, West Bengal",
-      score: "Percentage: 94.2%"
     }
+  ];
+
+  const certificates = [
+    { title: "Introduction to Generative AI Studio", issuer: "Simplilearn", date: "FEB 2026" },
+    { title: "Java Course - Fundamentals", issuer: "Scaler", date: "FEB 2026" },
+    { title: "RDBMS Introduction", issuer: "IBM", date: "AUG 2025" },
+    { title: "ML & Data Analytics", issuer: "Infosys Springboard", date: "JUN 2025" },
+    { title: "R Programming", issuer: "Coursera", date: "JUL 2024" },
+    { title: "Crash Course on Python", issuer: "Google", date: "APR 2024" },
+    { title: "HTML, CSS & JS", issuer: "John Hopkins University", date: "AUG 2023" }
   ];
 
   return (
@@ -286,39 +289,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Education Timeline */}
+      {/* Education Zig Zag Timeline */}
       <section id="education" className="py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Educational Path</h2>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Education</h2>
             <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
           </div>
 
-          <div className="relative border-l border-white/10 pl-8 space-y-12">
-            {education.map((edu, idx) => (
-              <div key={idx} className="relative">
-                <div className="absolute -left-[41px] top-0 h-6 w-6 rounded-full bg-background border-4 border-primary shadow-[0_0_10px_rgba(147,104,227,0.5)]" />
-                <div className="space-y-2">
-                  <div className="flex flex-wrap items-center justify-between gap-4">
-                    <h3 className="text-xl font-bold text-foreground">{edu.degree}</h3>
-                    <span className="text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-                      {edu.period}
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <GraduationCap className="h-4 w-4" /> {edu.school}
+          <div className="relative">
+            {/* Center Line for Desktop */}
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10 hidden md:block" />
+
+            <div className="space-y-12 relative">
+              {education.map((edu, idx) => (
+                <div key={idx} className={cn(
+                  "flex flex-col md:flex-row items-center",
+                  idx % 2 === 0 ? "md:justify-end" : "md:justify-start"
+                )}>
+                  {/* Dot on line for Desktop */}
+                  <div className="absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-background border-2 border-primary shadow-[0_0_8px_rgba(147,104,227,0.5)] hidden md:block z-10" />
+
+                  <Card className={cn(
+                    "glass border-white/5 p-8 w-full md:w-[45%] hover:border-primary/30 transition-all group relative",
+                    idx % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
+                  )}>
+                    <div className="space-y-4">
+                      <div className="flex flex-wrap items-center justify-between gap-4">
+                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{edu.degree}</h3>
+                        <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                          {edu.period}
+                        </Badge>
+                      </div>
+                      
+                      <div className="flex flex-col gap-2 text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <GraduationCap className="h-4 w-4 text-primary" /> 
+                          <span className="text-sm font-medium">{edu.school}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="h-4 w-4 text-secondary" /> 
+                          <span className="text-sm">{edu.location}</span>
+                        </div>
+                      </div>
+
+                      <div className="pt-4 border-t border-white/5">
+                        <Badge className="bg-secondary/10 text-secondary border-secondary/20 font-bold px-3 py-1">
+                          {edu.score}
+                        </Badge>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" /> {edu.location}
-                    </div>
-                  </div>
-                  <Badge className="bg-secondary/10 text-secondary border-secondary/20 font-bold">
-                    {edu.score}
-                  </Badge>
+                  </Card>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -328,13 +352,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Certifications</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <CertCard title="Introduction to Generative AI Studio" issuer="Simplilearn" date="FEB 2026" />
-            <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="FEB 2026" />
-            <CertCard title="RDBMS Introduction" issuer="IBM" date="AUG 2025" />
-            <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="JUN 2025" />
-            <CertCard title="R Programming" issuer="Coursera" date="JUL 2024" />
-            <CertCard title="Crash Course on Python" issuer="Google" date="APR 2024" />
-            <CertCard title="HTML, CSS & JS" issuer="John Hopkins University" date="AUG 2023" />
+            {certificates.map((cert, idx) => (
+              <CertCard key={idx} title={cert.title} issuer={cert.issuer} date={cert.date} />
+            ))}
           </div>
         </div>
       </section>
