@@ -133,11 +133,11 @@ export default function Home() {
                 Data Science & Full Stack Developer
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Bridging Data and <br />
-                <span className="text-primary glow-text">Intelligence.</span>
+                Hi, I'm <br />
+                <span className="text-primary glow-text">Simran Kaur</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                Building AI-powered systems, predictive models, and intelligent digital experiences.
+                Developer passionate about intelligent and scalable applications.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
@@ -297,7 +297,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Education Zig Zag Timeline */}
+      {/* Education Section (Zig Zag) */}
       <section id="education" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
