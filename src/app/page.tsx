@@ -21,7 +21,8 @@ export default function Home() {
     frameworks: ["NumPy", "Pandas", "Scikit-learn", "Seaborn", "XGBoost", "Statsmodels", "TensorFlow"],
     fullstack: ["React.js", "Node.js", "Express.js", "Next.js", "FastAPI"],
     databases: ["MongoDB", "MySQL", "MS-SQL"],
-    tools: ["Jupyter Notebook", "Tableau", "Excel", "Git", "Postman", "VS Code", "Google Colab"]
+    tools: ["Jupyter Notebook", "Tableau", "Excel", "Git", "Postman", "VS Code", "Google Colab"],
+    core: ["Data Structures & Algorithms", "DBMS", "Machine Learning", "Data Analytics", "Operating Systems"]
   };
 
   const experience = [
@@ -51,11 +52,11 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Addiction Risk Prediction",
-      subtitle: "Behavioral Analytics & Classification",
-      description: "Developed multiclass classification models using Random Forest and XGBoost to predict behavioral addiction patterns. Applied SHAP to interpret model predictions and identify key contributing features.",
-      tech: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "SHAP"],
-      image: addictionImg?.imageUrl
+      title: "Pehchaan",
+      subtitle: "Voter ID Verification System",
+      description: "Engineered backend architecture for a MERN-based Voter Verification System, integrating a Machine Learning model for identity validation using attributes such as Aadhaar and address.",
+      tech: ["MongoDB", "Express", "React", "Node", "Axios", "Machine Learning"],
+      image: pehchaanImg?.imageUrl
     },
     {
       title: "KIZASHI",
@@ -63,6 +64,13 @@ export default function Home() {
       description: "Developed a MERN-based behavioural analytics platform integrated with Machine Learning models to detect behavioural drift and predict productivity risks using BDI modelling.",
       tech: ["MongoDB", "Express", "Python", "FastAPI", "React", "Node", "Scikit-learn"],
       image: kizashiImg?.imageUrl
+    },
+    {
+      title: "Addiction Risk Prediction",
+      subtitle: "Behavioral Analytics & Classification",
+      description: "Developed multiclass classification models using Random Forest and XGBoost to predict behavioral addiction patterns. Applied SHAP to interpret model predictions and identify key contributing features.",
+      tech: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "SHAP"],
+      image: addictionImg?.imageUrl
     },
     {
       title: "Customer Segmentation Classification",
@@ -77,13 +85,6 @@ export default function Home() {
       description: "Designed a time-series analytics workflow to interpret global temperature trends and environmental variations using statistical validation and trend reliability testing.",
       tech: ["Python", "LSTM", "NLP", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
       image: climateImg?.imageUrl
-    },
-    {
-      title: "Pehchaan",
-      subtitle: "Voter ID Verification System",
-      description: "Engineered backend architecture for a MERN-based Voter Verification System, integrating a Machine Learning model for identity validation using attributes such as Aadhaar and address.",
-      tech: ["MongoDB", "Express", "React", "Node", "Axios", "Machine Learning"],
-      image: pehchaanImg?.imageUrl
     }
   ];
 
@@ -229,6 +230,7 @@ export default function Home() {
             <SkillCard title="Development" items={skills.fullstack} icon={<Cpu className="text-primary" />} />
             <SkillCard title="Databases" items={skills.databases} icon={<Database className="text-secondary" />} />
             <SkillCard title="Tools & Platforms" items={skills.tools} icon={<Wrench className="text-primary" />} />
+            <SkillCard title="Core CS" items={skills.core} icon={<Brain className="text-secondary" />} />
           </div>
         </div>
       </section>
