@@ -1,3 +1,4 @@
+"use client";
 
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
@@ -327,6 +328,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Certifications</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <CertCard title="HTML, CSS & JS" issuer="John Hopkins University" date="Recent" />
             <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="Feb 2026" />
             <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="Jun 2025" />
             <CertCard title="RDBMS Introduction" issuer="IBM" date="Aug 2025" />
