@@ -5,7 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Download, ExternalLink, GraduationCap, Code2, Cpu, Brain, Database, Wrench, MapPin, Phone, Award } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ExternalLink, GraduationCap, Code2, Cpu, Brain, Database, Wrench, MapPin, Award } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
 
@@ -400,18 +400,12 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <a href="mailto:54321jit93@gmail.com" className="flex flex-col items-center p-6 rounded-2xl glass border-white/5 hover:border-primary/50 transition-all hover:-translate-y-1 group">
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
               <span className="text-sm font-medium text-muted-foreground">Email</span>
-            </a>
-            <a href="tel:+917439406284" className="flex flex-col items-center p-6 rounded-2xl glass border-white/5 hover:border-primary/50 transition-all hover:-translate-y-1 group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">Call</span>
             </a>
             <a href="https://linkedin.com/in/simrankaur2004" target="_blank" className="flex flex-col items-center p-6 rounded-2xl glass border-white/5 hover:border-primary/50 transition-all hover:-translate-y-1 group">
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -432,7 +426,7 @@ export default function Home() {
               <MapPin className="h-3 w-3" /> Kolkata, India
             </span>
             <span className="mx-2">•</span>
-            <span>© 2024 Simran Kaur</span>
+            <span>© 2026 Simran Kaur</span>
           </div>
         </div>
       </section>
