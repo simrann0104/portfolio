@@ -182,6 +182,64 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Education Section (Zig Zag) */}
+      <section id="education" className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Education</h2>
+            <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
+          </div>
+
+          <div className="relative">
+            {/* Center Line for Desktop */}
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10 hidden md:block" />
+
+            <div className="space-y-12 relative">
+              {education.map((edu, idx) => (
+                <div key={idx} className={cn(
+                  "flex flex-col md:flex-row items-center",
+                  idx % 2 === 0 ? "md:justify-end" : "md:justify-start"
+                )}>
+                  {/* Dot on line for Desktop */}
+                  <div className="absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-background border-2 border-primary shadow-[0_0_8px_rgba(147,104,227,0.5)] hidden md:block z-10" />
+
+                  <Card className={cn(
+                    "glass border-white/5 p-8 w-full md:w-[45%] hover:border-primary/30 transition-all group relative",
+                    idx % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
+                  )}>
+                    <div className="space-y-4">
+                      <div className="flex flex-wrap items-center justify-between gap-4">
+                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{edu.degree}</h3>
+                        <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                          {edu.period}
+                        </Badge>
+                      </div>
+                      
+                      <div className="flex flex-col gap-2 text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <GraduationCap className="h-4 w-4 text-primary" /> 
+                          <span className="text-sm font-medium">{edu.school}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="h-4 w-4 text-secondary" /> 
+                          <span className="text-sm">{edu.location}</span>
+                        </div>
+                      </div>
+
+                      <div className="pt-4 border-t border-white/5">
+                        <Badge className="bg-secondary/10 text-secondary border-secondary/20 font-bold px-3 py-1">
+                          {edu.score}
+                        </Badge>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section */}
       <section id="experience" className="py-24 bg-card/10">
         <div className="max-w-7xl mx-auto px-6">
@@ -293,64 +351,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Education Section (Zig Zag) */}
-      <section id="education" className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Education</h2>
-            <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
-          </div>
-
-          <div className="relative">
-            {/* Center Line for Desktop */}
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10 hidden md:block" />
-
-            <div className="space-y-12 relative">
-              {education.map((edu, idx) => (
-                <div key={idx} className={cn(
-                  "flex flex-col md:flex-row items-center",
-                  idx % 2 === 0 ? "md:justify-end" : "md:justify-start"
-                )}>
-                  {/* Dot on line for Desktop */}
-                  <div className="absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-background border-2 border-primary shadow-[0_0_8px_rgba(147,104,227,0.5)] hidden md:block z-10" />
-
-                  <Card className={cn(
-                    "glass border-white/5 p-8 w-full md:w-[45%] hover:border-primary/30 transition-all group relative",
-                    idx % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
-                  )}>
-                    <div className="space-y-4">
-                      <div className="flex flex-wrap items-center justify-between gap-4">
-                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">{edu.degree}</h3>
-                        <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
-                          {edu.period}
-                        </Badge>
-                      </div>
-                      
-                      <div className="flex flex-col gap-2 text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <GraduationCap className="h-4 w-4 text-primary" /> 
-                          <span className="text-sm font-medium">{edu.school}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4 text-secondary" /> 
-                          <span className="text-sm">{edu.location}</span>
-                        </div>
-                      </div>
-
-                      <div className="pt-4 border-t border-white/5">
-                        <Badge className="bg-secondary/10 text-secondary border-secondary/20 font-bold px-3 py-1">
-                          {edu.score}
-                        </Badge>
-                      </div>
-                    </div>
-                  </Card>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
