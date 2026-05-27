@@ -146,7 +146,7 @@ export default function Home() {
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5" asChild>
                 <a 
-                  href="/Simran-Kaur-%20Backend%20Dev.pdf" 
+                  href="/Simran%20Kaur%20-%20Backend%20Dev.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

@@ -28,7 +28,7 @@
     {
       "id": "project-segmentation",
       "description": "Customer segments visualization and clustering",
-      "imageUrl": "https://picsum.photos/seed/clustering/800/600",
+      "imageUrl": "/customer.jpg",
       "imageHint": "market segments"
     }
   ]
