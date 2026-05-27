@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "profile-photo",
+      "description": "Professional portrait of a software engineer",
+      "imageUrl": "https://picsum.photos/seed/simran/400/400",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "project-kizashi",
+      "description": "Dashboard for behavioral analytics",
+      "imageUrl": "https://picsum.photos/seed/kizashi/800/600",
+      "imageHint": "data dashboard"
+    },
+    {
+      "id": "project-pehchaan",
+      "description": "Voter ID verification system interface",
+      "imageUrl": "https://picsum.photos/seed/pehchaan/800/600",
+      "imageHint": "verification system"
+    }
+  ]
+}
