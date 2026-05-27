@@ -249,7 +249,7 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold">Featured Work</h2>
               <p className="text-muted-foreground max-w-xl text-lg">
-                Applied machine learning and full-stack solutions for data-driven problems.
+                Backend engineering meets machine learning for smarter digital solutions
               </p>
             </div>
             <Button variant="link" className="text-primary group" asChild>
