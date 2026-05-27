@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,6 @@ export default function Home() {
   const pehchaanImg = PlaceHolderImages.find(img => img.id === "project-pehchaan");
   const addictionImg = PlaceHolderImages.find(img => img.id === "project-addiction");
   const segmentationImg = PlaceHolderImages.find(img => img.id === "project-segmentation");
-  const climateImg = PlaceHolderImages.find(img => img.id === "project-climate");
 
   const skills = {
     languages: ["Java", "Python", "R", "C++", "PHP", "JavaScript"],
@@ -78,13 +76,6 @@ export default function Home() {
       description: "Engineered a data-driven customer segmentation model using K-Means to uncover distinct behavioral cohorts and translate patterns into actionable business insights.",
       tech: ["R", "Clustering", "Tableau"],
       image: segmentationImg?.imageUrl
-    },
-    {
-      title: "Climate Change Modelling",
-      subtitle: "Time-Series Analytics",
-      description: "Designed a time-series analytics workflow to interpret global temperature trends and environmental variations using statistical validation and trend reliability testing.",
-      tech: ["Python", "LSTM", "NLP", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-      image: climateImg?.imageUrl
     }
   ];
 
