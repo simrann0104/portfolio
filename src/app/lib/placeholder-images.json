@@ -3,39 +3,39 @@
   "placeholderImages": [
     {
       "id": "profile-photo",
-      "description": "Professional portrait of a software engineer",
+      "description": "Professional portrait of Simran Kaur",
       "imageUrl": "https://picsum.photos/seed/simran/400/400",
       "imageHint": "professional woman"
     },
     {
-      "id": "project-kizashi",
-      "description": "Dashboard for behavioral analytics",
-      "imageUrl": "https://picsum.photos/seed/kizashi/800/600",
-      "imageHint": "data dashboard"
-    },
-    {
-      "id": "project-pehchaan",
-      "description": "Voter ID verification system interface",
-      "imageUrl": "https://picsum.photos/seed/pehchaan/800/600",
-      "imageHint": "verification system"
-    },
-    {
       "id": "project-addiction",
-      "description": "Visual representation of behavioral risk prediction",
+      "description": "Behavioral analytics dashboard for addiction risk prediction",
       "imageUrl": "https://picsum.photos/seed/addiction/800/600",
-      "imageHint": "analytics chart"
+      "imageHint": "analytics dashboard"
+    },
+    {
+      "id": "project-kizashi",
+      "description": "AI-based behavioral analytics platform interface",
+      "imageUrl": "https://picsum.photos/seed/kizashi/800/600",
+      "imageHint": "data interface"
     },
     {
       "id": "project-segmentation",
-      "description": "Customer segments visualization",
+      "description": "Customer segments visualization and clustering",
       "imageUrl": "https://picsum.photos/seed/customer/800/600",
-      "imageHint": "segmentation visualization"
+      "imageHint": "segmentation chart"
     },
     {
       "id": "project-climate",
-      "description": "Environmental climate modeling dashboard",
+      "description": "Climate change time-series modeling trends",
       "imageUrl": "https://picsum.photos/seed/climate/800/600",
-      "imageHint": "climate dashboard"
+      "imageHint": "climate graph"
+    },
+    {
+      "id": "project-pehchaan",
+      "description": "Voter ID verification system dashboard",
+      "imageUrl": "https://picsum.photos/seed/pehchaan/800/600",
+      "imageHint": "verification app"
     }
   ]
 }
