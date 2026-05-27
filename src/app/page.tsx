@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Download, ExternalLink, Award, GraduationCap, Code2, Cpu, Brain, Database, Wrench, Calendar, MapPin, Briefcase, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ExternalLink, GraduationCap, Code2, Cpu, Brain, Database, Wrench, MapPin, Phone, Award } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { RecruiterPitchTool } from "@/components/recruiter-pitch-tool";
 import { cn } from "@/lib/utils";
@@ -22,7 +22,7 @@ export default function Home() {
     frameworks: ["NumPy", "Pandas", "Scikit-learn", "Seaborn", "XGBoost", "Statsmodels", "TensorFlow"],
     fullstack: ["React.js", "Node.js", "Express.js", "Next.js", "FastAPI"],
     databases: ["MongoDB", "MySQL", "MS-SQL"],
-    tools: ["Jupyter Notebook", "Tableau", "Excel", "Git", "Postman", "VS Code"]
+    tools: ["Jupyter Notebook", "Tableau", "Excel", "Git", "Postman", "VS Code", "Google Colab"]
   };
 
   const experience = [
@@ -234,11 +234,6 @@ export default function Home() {
             <SkillCard title="Development" items={skills.fullstack} icon={<Cpu className="text-primary" />} />
             <SkillCard title="Databases" items={skills.databases} icon={<Database className="text-secondary" />} />
             <SkillCard title="Tools & Platforms" items={skills.tools} icon={<Wrench className="text-primary" />} />
-            <Card className="glass border-white/5 flex flex-col items-center justify-center p-8 text-center bg-primary/5">
-              <Award className="h-12 w-12 text-primary mb-4" />
-              <h3 className="font-headline text-xl font-bold mb-2">Top 10% Performance</h3>
-              <p className="text-sm text-muted-foreground">Recognized for academic excellence and nation-level competition participation.</p>
-            </Card>
           </div>
         </div>
       </section>
@@ -343,6 +338,28 @@ export default function Home() {
             <CertCard title="RDBMS Introduction" issuer="IBM" date="2025" />
             <CertCard title="R Programming" issuer="Coursera" date="2024" />
             <CertCard title="Crash Course on Python" issuer="Google" date="2024" />
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Achievements</h2>
+            <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+             <Card className="glass border-white/5 flex flex-col items-center justify-center p-8 text-center bg-primary/5 hover:border-primary/30 transition-all">
+              <Award className="h-12 w-12 text-primary mb-4" />
+              <h3 className="font-headline text-xl font-bold mb-2">Top 10% Performance</h3>
+              <p className="text-sm text-muted-foreground">Recognized for academic excellence and nation-level competition participation at Lovely Professional University.</p>
+            </Card>
+            <Card className="glass border-white/5 flex flex-col items-center justify-center p-8 text-center bg-secondary/5 hover:border-secondary/30 transition-all">
+              <Cpu className="h-12 w-12 text-secondary mb-4" />
+              <h3 className="font-headline text-xl font-bold mb-2">EY Techathon 6.0</h3>
+              <p className="text-sm text-muted-foreground">Competed and demonstrated innovative problem-solving in a nation-level tech challenge.</p>
+            </Card>
           </div>
         </div>
       </section>
