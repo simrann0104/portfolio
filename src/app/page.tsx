@@ -252,7 +252,7 @@ export default function Home() {
             {projects.map((project, idx) => (
               <div key={project.title} className={cn(
                 "group grid lg:grid-cols-2 gap-8 items-center rounded-3xl overflow-hidden border border-white/5 bg-card/40 p-4 md:p-8 hover:bg-card/60 transition-colors",
-                idx % 2 !== 0 && "lg:direction-rtl"
+                idx % 2 !== 0 && "lg:flex-row-reverse"
               )}>
                 <div className="relative aspect-video rounded-2xl overflow-hidden">
                   <Image
@@ -328,12 +328,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Certifications</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <CertCard title="Introduction to Generative AI Studio" issuer="Simplilearn" date="FEB 2026" />
+            <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="FEB 2026" />
+            <CertCard title="RDBMS Introduction" issuer="IBM" date="AUG 2025" />
+            <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="JUN 2025" />
+            <CertCard title="R Programming" issuer="Coursera" date="JUL 2024" />
+            <CertCard title="Crash Course on Python" issuer="Google" date="APR 2024" />
             <CertCard title="HTML, CSS & JS" issuer="John Hopkins University" date="AUG 2023" />
-            <CertCard title="Java Course - Fundamentals" issuer="Scaler" date="Feb 2026" />
-            <CertCard title="ML & Data Analytics" issuer="Infosys Springboard" date="Jun 2025" />
-            <CertCard title="RDBMS Introduction" issuer="IBM" date="Aug 2025" />
-            <CertCard title="R Programming" issuer="Coursera" date="Jul 2024" />
-            <CertCard title="Crash Course on Python" issuer="Google" date="Apr 2024" />
           </div>
         </div>
       </section>
